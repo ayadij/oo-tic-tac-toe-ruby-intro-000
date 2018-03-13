@@ -2,6 +2,8 @@
 
 ## Objectives
 
+https://github.com/johnsillings/oo-tic-tac-toe-ruby-intro-000/blob/master/README.md
+
 1. Build a CLI Tic Tac Toe game!
 2. Encapsulate Tic Tac Toe in a `TicTacToe` object.
 
