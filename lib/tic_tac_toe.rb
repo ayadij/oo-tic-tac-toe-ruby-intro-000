@@ -156,7 +156,7 @@ class TicTacToe
     if won?           # if the game is won,
       puts "Congratulations #{winner}!"   # puts
     else              # else if the game was a draw
-      puts "The game ended in a draw!"    # puts
+      puts "The Game Has Ended in a Draw!"    # puts
     end
   end
 

@@ -94,6 +94,7 @@ describe './lib/tic_tac_toe.rb' do
 
       it 'congratulates the winner O' do
         game = TicTacToe.new
+
         board = [" ", " ", " ", " ", " ", " ", "O", "O", "O"]
         game.instance_variable_set(:@board, board)
 
@@ -106,6 +107,7 @@ describe './lib/tic_tac_toe.rb' do
 
       it 'stops playing in a draw' do
         game = TicTacToe.new
+
         board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
         game.instance_variable_set(:@board, board)
         allow($stdout).to receive(:puts)
@@ -117,17 +119,19 @@ describe './lib/tic_tac_toe.rb' do
 
       it 'prints "Cat\'s Game!" on a draw' do
         game = TicTacToe.new
+
         board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
         game.instance_variable_set(:@board, board)
         allow($stdout).to receive(:puts)
 
-        expect($stdout).to receive(:puts).with("Cat's Game!")
+        expect($stdout).to receive(:puts).with("The Game Has Ended in a Draw!")
 
         game.play
       end
 
       it 'plays through an entire game' do
         game = TicTacToe.new
+        
         allow($stdout).to receive(:puts)
 
         expect(game).to receive(:gets).and_return("1")
